@@ -128,7 +128,12 @@ public class CalculatorModel {
 
     public double operationPercent(double value) { return 0.01 * value; }
 
-    public double operationInverse(double value) { return -42.0; }
+    public double operationInverse(double value){
+        if(value == 0.0){
+            return 0.0;
+        }
+        return (-1.0*value);
+    }
 
 
 }
